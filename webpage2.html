@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Requirements Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        th {
+            background-color: lightgray;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #e0e0e0;
+        }
+
+        th:hover,
+        td:hover {
+            border-color: #007bff;
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.2);
+        }
+
+        .outcome {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .note {
+            font-style: italic;
+            color: #6c757d;
+        }
+
+        .work-product {
+            margin-top: 10px;
+        }
+        
+        .work-product a {
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+        
+        .work-product a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">System Requirements Analysis</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Process ID</th>
+            <td>SYS.2</td>
+        </tr>
+        <tr>
+            <th>Process name</th>
+            <td>System Requirements Analysis</td>
+        </tr>
+        <tr>
+            <th>Process purpose</th>
+            <td>The purpose of the System Requirements Analysis Process is to transform the defined stakeholder requirements into a set of system requirements that will guide the design of the system.</td>
+        </tr>
+        <tr>
+            <th>Process outcomes</th>
+            <td>As a result of successful implementation of this process:<br>
+                1) A defined set of system requirements is established;<br>
+                2) System requirements are categorized and analyzed for correctness and verifiability;<br>
+                3) The impact of system requirements on the operating environment is analyzed;<br>
+                4) Prioritization for implementing the system requirements is defined;<br>
+                5) The system requirements are updated as needed;<br>
+                6) Consistency and bidirectional traceability are established between stakeholder requirements and system requirements;<br>
+                7) The system requirements are evaluated for cost, schedule, and technical impact;<br>
+                8) The system requirements are agreed and communicated to all affected parties.</td>
+        </tr>
+        <tr>
+            <th>Base Practices</th>
+            <td>
+                <span class="outcome">SYS.2.BP1:</span> Specify system requirements. Use stakeholder requirements to identify system functions and capabilities. Specify functional and non-functional system requirements in a system requirements specification. <span class="note">[OUTCOME 1, 5, 7]</span><br><br>
+                <span class="note">NOTE 1:</span> Application parameters influencing functions and capabilities are part of the system requirements.<br>
+                <span class="note">NOTE 2:</span> For changes to stakeholder requirements, SUP.10 applies.<br><br>
+                <span class="outcome">SYS.2.BP2:</span> Structure system requirements. Structure requirements in the system requirements specification by grouping, sorting, categorizing, and prioritizing according to stakeholder needs. <span class="note">[OUTCOME 2, 4]</span><br><br>
+                <span class="note">NOTE 3:</span> Prioritizing typically includes assigning functional content to planned releases. Refer to SPL.2.BP1.<br><br>
+                <span class="outcome">SYS.2.BP3:</span> Analyze system requirements. Analyze specified requirements including interdependencies to ensure correctness, feasibility, verifiability, and support risk identification. Analyze impact on cost, schedule, and technical feasibility. <span class="note">[OUTCOME 1, 2, 7]</span><br><br>
+                <span class="note">NOTE 4:</span> Analysis of impact on cost and schedule supports adjustment of project estimates. Refer to MAN.3.BP5.<br><br>
+                <span class="outcome">SYS.2.BP4:</span> Analyze impact on operating environment. Identify system interfaces and analyze impact of system requirements on these interfaces and the environment. <span class="note">[OUTCOME 3, 7]</span><br><br>
+                <span class="outcome">SYS.2.BP5:</span> Develop verification criteria. Define qualitative and quantitative measures for verifying each system requirement. <span class="note">[OUTCOME 2, 7]</span><br><br>
+                <span class="note">NOTE 5:</span> Verification criteria demonstrate requirement verification within agreed constraints and inform system test case development. Verification not covered by testing is addressed in SUP.2.<br><br>
+                <span class="outcome">SYS.2.BP6:</span> Establish bidirectional traceability. Ensure traceability between stakeholder requirements and system requirements. <span class="note">[OUTCOME 6]</span><br><br>
+                <span class="note">NOTE 6:</span> Traceability supports coverage, consistency, and impact analysis.<br><br>
+                <span class="outcome">SYS.2.BP7:</span> Ensure consistency. Maintain consistency between stakeholder requirements and system requirements. <span class="note">[OUTCOME 6]</span><br><br>
+                <span class="note">NOTE 7:</span> Consistency is supported by traceability and can be demonstrated by review records.<br><br>
+                <span class="outcome">SYS.2.BP8:</span> Communicate agreed system requirements. Communicate system requirements and updates to relevant parties. <span class="note">[OUTCOME 8]</span>
+            </td>
+        </tr>
+        <tr>
+            <th>Output work products</th>
+            <td class="work-product">
+                13-04 <a href="webpage.html">Communication record</a> → <span class="outcome">[OUTCOME 8]</span><br>
+                13-19 <a href="webpage.html">Review record</a> → <span class="outcome">[OUTCOME 6]</span><br>
+                13-21 <a href="webpage.html">Change control record</a> → <span class="outcome">[OUTCOME 1]</span><br>
+                13-22 <a href="webpage.html">Traceability record</a> → <span class="outcome">[OUTCOME 6]</span><br>
+                15-01 <a href="webpage.html">Analysis report</a> → <span class="outcome">[OUTCOME 2, 3, 4, 7]</span><br>
+                17-08 <a href="webpage.html">Interface requirements specification</a> → <span class="outcome">[OUTCOME 1, 3]</span><br>
+                17-12 <a href="webpage.html">System requirements specification</a> → <span class="outcome">[OUTCOME 1, 5]</span><br>
+                17-50 <a href="webpage.html">Verification criteria</a> → <span class="outcome">[OUTCOME 2]</span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
