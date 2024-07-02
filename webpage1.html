@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier Monitoring Process</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid transparent;
+            padding: 10px;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        th {
+            background-color: lightgray;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #e0e0e0;
+        }
+
+        th:hover,
+        td:hover {
+            border-color: #ccc;
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .outcome {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .note {
+            font-style: italic;
+            color: #6c757d;
+        }
+
+        .work-product {
+            margin-top: 10px;
+        }
+        
+        .work-product a {
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+        
+        .work-product a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Supplier Monitoring Process</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Process ID</th>
+            <td>ACQ.4</td>
+        </tr>
+        <tr>
+            <th>Process name</th>
+            <td>Supplier Monitoring</td>
+        </tr>
+        <tr>
+            <th>Process purpose</th>
+            <td>The purpose of the Supplier Monitoring Process is to track and assess the performance of the supplier against agreed requirements.</td>
+        </tr>
+        <tr>
+            <th>Process outcomes</th>
+            <td>As a result of successful implementation of this process:<br>
+                1) Joint activities are performed as needed;<br>
+                2) All agreed information is communicated regularly;<br>
+                3) Supplier performance is monitored against agreements;<br>
+                4) Changes to agreements are negotiated and documented.</td>
+        </tr>
+        <tr>
+            <th>Base Practices</th>
+            <td>
+                <span class="outcome">ACQ.4.BP1:</span> Agree on and maintain joint processes, interfaces, and information to be exchanged. Establish and maintain agreements on responsibilities, type and frequency of activities, communications, etc. <span class="note">[OUTCOME 1, 2, 4]</span><br><br>
+                <span class="note">NOTE 1:</span> Joint processes and interfaces include project management, requirements management, etc.<br>
+                <span class="note">NOTE 2:</span> Joint activities should be mutually agreed.<br>
+                <span class="note">NOTE 3:</span> Customer refers to the assessed party, supplier refers to the supplier of the assessed party.<br><br>
+                <span class="outcome">ACQ.4.BP2:</span> Exchange all agreed information using defined interfaces. <span class="note">[OUTCOME 1, 2, 3]</span><br>
+                <span class="note">NOTE 4:</span> Agreed information includes all relevant work products.<br><br>
+                <span class="outcome">ACQ.4.BP3:</span> Review technical development with the supplier regularly, covering technical aspects, problems, risks, and open items. <span class="note">[OUTCOME 1, 3, 4]</span><br><br>
+                <span class="outcome">ACQ.4.BP4:</span> Review supplier progress regarding schedule, quality, and cost regularly. Track open items and perform risk mitigation. <span class="note">[OUTCOME 1, 3, 4]</span><br><br>
+                <span class="outcome">ACQ.4.BP5:</span> Act to correct deviations from agreed objectives. Negotiate changes and document them in agreements. <span class="note">[OUTCOME 4]</span>
+            </td>
+        </tr>
+        <tr>
+            <th>Output work products</th>
+            <td class="work-product">
+                02-01 <a href="webpage.html">Commitment/agreement</a> → <span class="outcome">[OUTCOME 4]</span><br>
+                13-01 <a href="webpage.html">Acceptance record</a> → <span class="outcome">[OUTCOME 3]</span><br>
+                13-04 <a href="webpage.html">Communication record</a> → <span class="outcome">[OUTCOME 1, 2]</span><br>
+                13-09 <a href="webpage.html">Meeting support record</a> → <span class="outcome">[OUTCOME 1]</span><br>
+                13-14 <a href="webpage.html">Progress status record</a> → <span class="outcome">[OUTCOME 2]</span><br>
+                13-16 <a href="webpage.html">Change request</a> → <span class="outcome">[OUTCOME 4]</span><br>
+                13-19 <a href="webpage.html">Review record</a> → <span class="outcome">[OUTCOME 2]</span><br>
+                14-02 <a href="webpage.html">Corrective action register</a> → <span class="outcome">[OUTCOME 4]</span><br>
+                15-01 <a href="webpage.html">Analysis report</a> → <span class="outcome">[OUTCOME 3]</span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
